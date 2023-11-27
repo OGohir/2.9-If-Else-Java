@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Autonomous
+{
+    public static void Autonomous()
+    {
+        
+    Scanner input = new Scanner(System.in);
+    
+    System.out.println("What is the colour of the stoplight? ");
+    String colour = input.nextLine();
+    
+    if (colour.toLowerCase().equals("red"))
+    {
+        System.out.println("STOP!");
+    } 
+    
+    if (colour.toLowerCase().equals("yellow"))
+    {
+        System.out.print("What is your speed in km/h?");
+        int speed = Integer.parseInt(input.nextLine());
+        
+        if (speed > 60)
+        {
+            System.out.println("STOP!");
+        } else {
+            System.out.println("go!");
+        }
+    }
+    
+    if (colour.toLowerCase().equals("green"))
+    {
+        System.out.println("go!");
+    }
+    
+    }
+}
