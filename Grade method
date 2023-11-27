@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Grade
+{
+    public static void Grade()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("What grade are you in? ");
+        int grade = Integer.parseInt(input.nextLine());
+        
+        if (grade >= 9 && grade <=12)
+        {
+            System.out.println("You are in highschool");
+        } else {
+            System.out.println("You are not in highschool");
+        }
+    }
+}
