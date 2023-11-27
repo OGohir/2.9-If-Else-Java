@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Skiing
+{
+    public static void Skiing()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Do you have your skiis?");
+        
+        String question = input.nextLine();
+        
+        if (question.toLowerCase().equals("yes"))
+        {
+            System.out.println("Do you have your boots?");
+            String question_2 = input.nextLine();
+            
+            if (question_2.toLowerCase().equals("yes"))
+            {
+                System.out.println("You are ready to go!");
+            } else {
+                System.out.println("You are missing something!");
+            }
+            
+        } else {
+            System.out.println("You are missing something");
+        }
+    }
+
+}
