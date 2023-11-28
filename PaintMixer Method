@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class PaintMixer
+{
+    
+    public static void PaintMixer()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Choose 2 different paint colours from a selection of red, green and blue");
+        String colour_1 = input.nextLine();
+        
+        System.out.println("Choose 2 different paint colours from a selection of red, green and blue");
+        String colour_2 = input.nextLine();
+        
+        if (colour_1.toLowerCase().equals("red") && colour_2.toLowerCase().equals("green") || colour_1.toLowerCase().equals("green") && colour_2.toLowerCase().equals("red"))
+        {
+            System.out.println("brown");
+        }
+        
+        if (colour_1.toLowerCase().equals("green") && colour_2.toLowerCase().equals("blue") || colour_1.toLowerCase().equals("blue") && colour_2.toLowerCase().equals("green"))
+        {
+            System.out.println("teal");
+        }
+        
+        if (colour_1.toLowerCase().equals("red") && colour_2.toLowerCase().equals("blue") ||  colour_1.toLowerCase().equals("blue") && colour_2.toLowerCase().equals("red"))
+        {
+            System.out.println("purple");
+        }
+    }
+}
