@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Homework
+{
+    public static void Homework()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Is your homework finished? ");
+        
+        String answer = input.nextLine();
+        
+        if (answer.toLowerCase().equals("yes"))
+        {
+            System.out.print("OK");
+            
+        } else {
+            System.out.print("NOT OK");
+            
+            System.out.println("Did you attempt your homework?");
+            String answer_2 = input.nextLine();
+            
+            if (answer_2.toLowerCase().equals("yes"))
+            {
+                System.out.println("OK");
+                
+            } else {
+                System.out.println("NOT OK");
+            }
+            
+        }
+        
+    }
+}
