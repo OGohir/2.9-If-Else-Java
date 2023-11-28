@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Dessert 
+{
+    public static void Dessert ()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Do you want cake or pie?" );
+        
+        String answer_1 = input.nextLine();
+        
+        if (answer_1.toLowerCase().equals("cake"))
+        {
+            System.out.println("What topping?: fruit or icing");
+            String answer_2 = input.nextLine();
+            
+            if (answer_2.toLowerCase().equals("icing") || answer_2.toLowerCase().equals("fruit"))
+            {
+                System.out.println(answer_1 + " with " + answer_2 + " coming right up!");
+            }
+        }
+        
+        if (answer_1.toLowerCase().equals("pie"))
+        {
+            System.out.print("What topping?: icecream or whipped cream");
+            String answer_2 = input.nextLine();
+            
+            if (answer_2.toLowerCase().equals("icecream") || answer_2.toLowerCase().equals("whipped cream"))
+            {
+                System.out.println(answer_1 + " with " + answer_2 + " coming right up!");
+            }
+        }
+
+}
+}
